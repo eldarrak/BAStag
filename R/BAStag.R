@@ -379,6 +379,9 @@ tsimageLines <- function(date,offset,...) {
   lines(date,hour-24,...)
   lines(date,hour+24,...)
   lines(date,hour,...)
+  points(date,hour-24,pch="+",...)
+  points(date,hour+24,pch="+",...)
+  points(date,hour,pch="+",...)
 }
 
 ##' @rdname tsimagePlot
